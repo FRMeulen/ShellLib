@@ -11,3 +11,5 @@ source "${basedir}/texteffects.sh"
 homedir=$( getent passwd "$USER" | cut -d: -f6 )
 projdir=/home/falco/Documents/TI/OwnProjects
 list="${homedir}"/Documents/.todo
+txteditor=subl
+webbrowser=firefox

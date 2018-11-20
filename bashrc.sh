@@ -32,7 +32,7 @@ bashrc() {
         #   Definition of '-open' option.
         elif [[ $1 == "-open" ]]; then
             command echo -e "${TXTCYAN}Opening bashrc!"
-            command subl "${homedir}"/.bashrc
+            command ${txteditor} "${homedir}"/.bashrc
         
         #   Notify user.
         else
