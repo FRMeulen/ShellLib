@@ -14,7 +14,7 @@ command echo -e "${TXTLIGHTCYAN}Base directory: ${TXTLIGHTYELLOW}${basedir}${RES
 command echo -e "${TXTLIGHTCYAN}Project directory: ${TXTLIGHTYELLOW}${projdir}${RESETALL}"
 command echo -e "${TXTLIGHTCYAN}Text editor: ${TXTLIGHTYELLOW}${txteditor}${RESETALL}"
 command echo -e "${TXTLIGHTCYAN}Web browser: ${TXTLIGHTYELLOW}${webbrowser}${RESETALL}"
-
+command echo ""
 
 #	If project directory is not configured.
 if [[ ${projdir} == "" ]]; then

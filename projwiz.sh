@@ -1,5 +1,5 @@
 #	Project: Shell-Functions.
-#	proj.sh	--	Navigation & creation of projects.
+#	projwiz.sh	--	Navigation & creation of projects.
 #	Revisions:
 #	2018-11-16	--	F.R. van der Meulen	--	Created.
 
@@ -11,7 +11,7 @@ source "${basedir}/configs.sh"
 #	Function definition.
 proj() {
 	#	Notify user.
-	command echo -e "${TXTLIGHTMAGENTA}---Projects invoked---${RESETALL}"
+	command echo -e "${TXTLIGHTMAGENTA}---Project Wizard invoked---${RESETALL}"
 
 	#	Check if projects directory is configured.
 	if [[ ${projdir} == "" ]]; then
@@ -22,9 +22,9 @@ proj() {
 
 	#	Request action.
 	command echo -e "${TXTLIGHTCYAN}Select option:${RESETALL}"
-	command echo -e "	${TXTLIGHTYELLOW}search	--	Finds & opens project directory.${RESETALL}"
+	command echo -e "	${TXTLIGHTYELLOW}find	--	Finds & opens project directory.${RESETALL}"
 	command echo -e "	${TXTLIGHTYELLOW}list	--	Lists all available projects.${RESETALL}"
-	command echo -e "	${TXTLIGHTYELLOW}create	--	Makes new project directory.${RESETALL}"
+	command echo -e "	${TXTLIGHTYELLOW}make	--	Makes new project directory.${RESETALL}"
 	command echo -e "	${TXTLIGHTYELLOW}delete	--	Deletes project directory.${RESETALL}"
 
 	#	Read user action.
@@ -202,5 +202,5 @@ proj() {
 	fi
 
 	#	Notify user.
-	command echo -e "${TXTLIGHTMAGENTA}---Projects ended---"
+	command echo -e "${TXTLIGHTMAGENTA}---Project Wizard ended---"
 }
