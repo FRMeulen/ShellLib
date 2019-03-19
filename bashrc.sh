@@ -25,9 +25,7 @@ bashrc() {
         #   Definition of '-refresh' option.
         if [[ $1 == "-refresh" ]];then
             command echo -e "${TXTBOLD}${TXTBLACK}${BGLIGHTCYAN}Refreshing bashrc!${RESETALL}"
-            command pushd "${homedir}"
-            command . ./.bashrc
-            command popd
+            ( cd "${homedir}" && . ./.bashrc )
 
         #   Definition of '-open' option.
         elif [[ $1 == "-open" ]]; then
